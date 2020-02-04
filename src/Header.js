@@ -1,9 +1,11 @@
 import React from 'react'; 
 
-export default function Header(props) {
+// destructuring version 
+export default function Header({title}) {
     return(
     <header>
-        <h1>{props.content}</h1>
+        {/* what is on left hand side of tag in App */}
+        <h1>{title}</h1>
     </header> 
     );
 }
