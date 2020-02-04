@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
+import Footer from './Footer';
+import MainContent from './MainContent';
 
-function App() {
+const content= `Aylor is a talented web dev. She would be a great addition
+to your team!`;
+const headerContent = `Hire Aylor Brown!`;
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header content={headerContent}/>
+      <MainContent content={content}/>
+      <Footer />
     </div>
   );
 }
 
-export default App;
+// export default App;
